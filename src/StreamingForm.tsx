@@ -19,7 +19,7 @@ const initialSpec: Spec = {
   elements: {
     "form-1": {
       type: "Form",
-      props: { title: "Loading Form...", description: "Waiting for stream..." },
+      props: {},
       children: [],
     },
   },
@@ -154,9 +154,9 @@ export function StreamingForm() {
     <div className="container mx-auto p-8 flex flex-col md:flex-row gap-8">
       {/* 左侧：表单渲染区域 */}
       <div className="flex-1">
-        <h1 className="text-2xl font-bold mb-4">Streaming Form Demo</h1>
+        <h1 className="text-2xl font-bold mb-4">流式表单渲染器</h1>
         <div className="mb-4 text-sm text-gray-500">
-          Simulating LLM Token Streaming...
+          模拟 LLM 流式传输...
         </div>
         <StateProvider>
           <VisibilityProvider>
@@ -171,7 +171,7 @@ export function StreamingForm() {
       
       {/* 右侧：原始 JSON 数据流展示区域 */}
       <div className="flex-1 max-w-lg">
-        <h2 className="text-lg font-bold mb-2 text-gray-700">Raw JSON Stream (Token by Token)</h2>
+        <h2 className="text-lg font-bold mb-2 text-gray-700">当前流式传输的 JSON 数据</h2>
         <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-auto h-[600px] font-mono text-xs whitespace-pre-wrap shadow-inner">
           {rawText}
           <span className="animate-pulse">_</span>

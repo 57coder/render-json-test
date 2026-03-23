@@ -16,32 +16,32 @@ const mockStreamPlugin = () => ({
         elements: {
           "form-1": {
             type: "Form",
-            props: { title: "User Registration", description: "Fill in your details below." },
+            props: { title: "用户注册", description: "请填写您的详细信息。" },
             children: ["input-name", "input-email", "select-role", "btn-submit"],
           },
           "input-name": {
             type: "Input",
-            props: { label: "Full Name", name: "fullName", placeholder: "John Doe" },
+            props: { label: "姓名", name: "fullName", placeholder: "请输入您的姓名" },
           },
           "input-email": {
             type: "Input",
-            props: { label: "Email Address", name: "email", type: "email", placeholder: "john@example.com" },
+            props: { label: "邮箱", name: "email", type: "email", placeholder: "请输入您的邮箱地址" },
           },
           "select-role": {
             type: "Select",
             props: {
-              label: "Role",
+              label: "角色",
               name: "role",
               options: [
-                { label: "Developer", value: "dev" },
-                { label: "Designer", value: "design" },
-                { label: "Manager", value: "pm" },
+                { label: "开发人员", value: "dev" },
+                { label: "设计师", value: "design" },
+                { label: "项目管理", value: "pm" },
               ],
             },
           },
           "btn-submit": {
             type: "Button",
-            props: { label: "Register Now", action: "submit" },
+            props: { label: "注册", action: "submit" },
           },
         },
       };
