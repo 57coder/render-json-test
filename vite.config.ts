@@ -78,5 +78,6 @@ const mockStreamPlugin = () => ({
 });
 
 export default defineConfig({
+  base: "/render-json-test/",  
   plugins: [react(), tailwindcss(), mockStreamPlugin()],
 })
